@@ -1,0 +1,3 @@
+*.js linguist-language=ligen
+*.css linguist-language=ligen
+*.html linguist-language=ligen
