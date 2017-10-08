@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border:0;
+}
+ol, ul ,li{list-style: none;}
+ul{
+    text-decoration: none;
+    list-style:none;
+}
+
+/* =====
+    全局样式
+   =====*/
+
+body{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    font-size:15px;
+}
+/* =====
+    Header样式
+   =====*/
+header{
+    width:100%;
+    height:40px;
+    background-color: #343d46;
+}
+nav {
+    background-color: #434c5a;
+    line-height:40px;
+    width:800px;
+    margin: 0 auto;
+    position: relative;
+}
+header>div{
+    height:40px;
+}
+header nav>ul{
+
+    overflow: hidden;
+}
+header nav>ul li{
+    height:40px;
+    box-sizing: border-box;
+    float: left;
+    width:110px;
+    text-align:center;
+    cursor:pointer;
+    letter-spacing: 5px;
+    font-family: Arial;
+    color: #acb3bf;
+    font-weight: bold;
+    position: relative;
+    transition: all ease .5s;
+}
+header nav>ul li:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:3px;
+    height:40px;
+    background-image: url("../img/navigation divider.png");
+    background-repeat:no-repeat;
+}
+
+header nav>ul li:first-child{
+    width:60px;
+    padding-top: 6px;
+}
+header nav>ul li:last-child{
+    width: 300px;
+    height:40px;
+    overflow: hidden;
+}
+header nav ul li:hover{
+    background-color: #5a6370;
+}
+header nav ul li:last-child:hover{
+    background-color: #46505e;
+}
+header nav ul li input:focus{
+    background-color: #5a6370;
+}
+header nav ul:before{
+    content: "";
+    display: block;
+    position: absolute;
+    right:0;
+    top:0;
+    width:5px;
+    height:64px;
+    background-image: url("../img/navigation divider.png");
+    background-repeat:no-repeat;
+}
+
+.search>div{
+    box-sizing: border-box;
+    height:100%;
+    width:100%;
+    padding:5px;
+    padding-right: 13px;
+    padding-left: 13px;
+    overflow: hidden;
+
+}
+.search>div form{
+    overflow: hidden;
+    height:100%;
+}
+.search button{
+    outline:0;
+    border:0;
+}
+.search>div div{
+    float: left;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+}
+.search input{
+    display: block;
+    width:210px;
+    border:0;
+    height:100%;
+    outline:0;
+    background-color: #323640;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px .2px #191b20 inset;
+    font-family: Arial;
+    color: #acb3bf;
+    font-weight: bold;
+    text-indent: 20px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #474e58; opacity:1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #474e58;opacity:1;
+}
+
+input:-ms-input-placeholder{
+    color: #474e58;opacity:1;
+}
+
+input::-webkit-input-placeholder{
+    color: #474e58;opacity:1;
+}
+
+.search>div i{
+    display: inline-block;
+    height:100%;
+    float: left;
+    margin-left:16px;
+    line-height: 38px;
+}
+.search>div i button{
+    line-height:100%;
+    background-color: rgba(0,0,0,0);
+    position: relative;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.detail {
+    position: absolute;
+    height:310px;
+    width:100%;
+    background-color: #343d46;
+    z-index:100;
+    display: none;
+}
+.detail .left{
+    width:calc(100% - (800px + (100% - 800px) / 2));
+    height:100%;
+    float: left;
+}
+.detail .left>div{
+    width:250px;
+    height:100%;
+    background: #5a6370;
+    float: right;
+}
+.detail .right {
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    padding-left:calc((100% - 800px) / 2);
+}
+.detail .right>div{
+    padding: 30px;
+    height:100%;
+    width:100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.detail .right ul{
+    width:150px;
+    float: left;
+}
+.detail .right .website{
+    width:calc(100% - 150px);
+    float: left;
+}
+.detail .right div ul li{
+    width:100px;
+    height:24px;
+    border:2px solid #80a62d;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    margin-bottom:30px;
+    font-family: Arial;
+    font-size: 13px;
+    line-height:24px;
+    color: #acb3bf;
+    font-weight:bold;
+    letter-spacing: 2px;
+    background-color: #141517;
+    text-align: center;
+    cursor:pointer;
+    position: relative;
+    z-index:50;
+}
+.detail .right .website a{
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 15px;
+
+    color: #acb3bf;
+    display: block;
+    float: left;
+    width:calc(100% / 5);
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom:1px solid #00ff00;
+    transition: all ease .5s;
+    word-spacing:nowrap;
+}
+.detail .right .website a:hover{
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+    /*   =====
+         bing图片层
+         =====*/
+section {
+    width: 100%;
+    height:calc(100% - 50px - 40px);
+    background-image: url("https://api.dujin.org/bing/1920.php");
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+section iframe{
+    width:100%;
+    height:100%;
+    outline: 0;
+    border:0;
+    display: none;
+    position: absolute;
+    z-index:10;
+}
+section .shelter{
+    width:100%;
+    height:100%;
+    opacity:0;
+    background-color: rgba(0,0,0,.3);
+    transition: .5s ease;
+}
+section:hover .shelter{
+    opacity:1;
+}
+section:hover .shelter ul li:first-child{
+    animation: fadeInLeft 1s;
+}
+section:hover .shelter ul li:nth-of-type(2){
+    animation: fadeInLeft 1.5s;
+}
+section:hover .shelter ul li:nth-of-type(3){
+    animation: fadeInLeft 2s;
+}
+section:hover .shelter ul li:nth-of-type(4){
+    animation: fadeInLeft 2.5s;
+}
+section div.shelter{
+}
+section>div ul{
+    width: 400px;
+    padding-top:60px;
+    padding-left: 80px;
+    padding-right:80px;
+    float: left;
+}
+section>div ul li{
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    margin-bottom:30px;
+    line-height:26px;
+    font-family: "微软雅黑";
+}
+section>div ul li:nth-of-type(2){
+    font-size: 15px;
+    color: rgb(198, 204, 204);
+}
+section>div ul li:nth-of-type(3),section>div ul li:nth-of-type(4){
+    font-size: 13px;
+    line-height: 24px;
+    color: #959595;
+}
+section .shelter i img{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right:20px;
+}
+/* ========
+底部
+ ========*/
+footer{
+    width:100%;
+    height:50px;
+    background-color: #343d46;
+    bottom: 0;
+}
+footer ul{
+    width:400px;
+    margin:0 auto;
+    overflow: hidden;
+}
+footer ul li img{
+    width:50px;
+    height:50px;
+}
+footer ul li{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+footer ul li+li{
+    margin-left: 30px;
+}
+footer>div{
+    position: absolute;
+    bottom:0;
+    background-image: url("../img/button divider.png");
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 70px;
+    right:0;
+    margin-right: 44px;
+    z-index:20;
+}
+footer button{
+    width:70px;
+    height:70px;
+    background-color: rgba(0,0,0,0);
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+footer button img{
+    height:30px;
+    width:30px;
+}
