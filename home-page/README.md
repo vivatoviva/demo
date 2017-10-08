@@ -1,9 +1,9 @@
 ## 将必应美图和收藏夹结合起来的首页，可用作浏览器主页
 ### 时间过程
-* 开始学习前端就做了一个浏览器主页，如下![此处输入图片的描述](http://github.com/vivatoviva/demo/home-page/raw/master/display-img/30562687.png)
+* 开始学习前端就做了一个浏览器主页，如下![此处输入图片的描述](https://raw.githubusercontent.com/vivatoviva/demo/master/home-page/display-img/30562687.png)
 * 在大一下就设计了一个主页。如下
 ![此处输入图片的描述][2]
-* 到大二这次十一假期，实现作为1.0版本吧，如下![此处输入图片的描述](http://oquq74tfk.bkt.clouddn.com/17-10-8/18839102.jpg)
+* 到大二这次十一假期，实现作为1.0版本吧，如下![此处输入图片的描述](https://raw.githubusercontent.com/vivatoviva/demo/master/home-page/display-img/18839102.png)
 ### 完成这个主要目的
  * 练习最近学到的ES6、git、webpack
  * 为以后要学习的东西提供一个练手机会
@@ -27,7 +27,7 @@
 * 搜索提示和网页内嵌
 * 切换必应图片，支持4天前数据（ ajax必应图片信息，目前使用别人接口，详情返回错误）
 * 数据方式的内容填充
-![此处输入图片的描述][4]
+[此处输入图片的描述](https://raw.githubusercontent.com/vivatoviva/demo/master/home-page/display-img/18839102.png)
 
 
   [1]: http://oquq74tfk.bkt.clouddn.com/17-10-8/30562687.jpg
