@@ -14,16 +14,16 @@
  * 自己的主页看着爽，能随时更改
 
 ## 快速使用
-> 安装依赖
-> cnpm install
-> 打包并启动服务器
-> npm run server
-> 进行查看
-> localhost:8080
-> 或者build中index.html
+* 安装依赖
+* cnpm install
+* 打包并启动服务器
+* npm run server
+* 进行查看
+* localhost:8080
+* 或者build中index.html
 
 
-##版本迭代
+## 版本迭代
 ### V1.0
 
 * 顶部三级菜单
