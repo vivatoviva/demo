@@ -9,6 +9,10 @@
 
 * 3、n，必要。这是输出信息的数量，比如n=1，即为1条，以此类推，至多输出8条；*
  */
+var img = require('./img/46201453_3.gif');
+
+img = "../" + img;//因为我将output中filename设置为js/,所以中间的图片都是相对于上一级进行插入
+
 let prevbtn = document.getElementById('prev');
 let nextbtn = document.getElementById('next');
 let id = 0;
@@ -134,7 +138,7 @@ nextbtn.onclick = function(){
     }
 }
 async function init(){
-    section.style.backgroundImage = `url("img/46201453_3.gif")`;
+    section.style.backgroundImage = "url(img/"+img+")";
     await getData();
 }
 

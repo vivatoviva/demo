@@ -69,8 +69,11 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__header_c__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__footer_c__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__header_c__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__footer_c__ = __webpack_require__(5);
+__webpack_require__(1);
+__webpack_require__(2);
+
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__header_c__["a" /* default */])();
@@ -78,10 +81,22 @@ Object(__WEBPACK_IMPORTED_MODULE_1__footer_c__["a" /* default */])().then(() => 
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__header_m__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__header_m__ = __webpack_require__(4);
 /*这个部分完成页面header部分的逻辑*/
 
 
@@ -186,7 +201,7 @@ homebtn.onclick = function () {
 /* harmony default export */ __webpack_exports__["a"] = (head);
 
 /***/ }),
-/* 2 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -495,7 +510,7 @@ var webs = {
 /* harmony default export */ __webpack_exports__["a"] = (webs);
 
 /***/ }),
-/* 3 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -510,6 +525,10 @@ var webs = {
 
 * 3、n，必要。这是输出信息的数量，比如n=1，即为1条，以此类推，至多输出8条；*
  */
+var img = __webpack_require__(6);
+
+img = "../" + img; //因为我将output中filename设置为js/,所以中间的图片都是相对于上一级进行插入
+
 let prevbtn = document.getElementById('prev');
 let nextbtn = document.getElementById('next');
 let id = 0;
@@ -627,11 +646,17 @@ nextbtn.onclick = function () {
   }
 };
 async function init() {
-  section.style.backgroundImage = `url("img/46201453_3.gif")`;
+  section.style.backgroundImage = "url(img/" + img + ")";
   await getData();
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (init);
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/0e8edbcaef3e22718de6334626ed6d25.gif";
 
 /***/ })
 /******/ ]);
